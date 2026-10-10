@@ -17,7 +17,7 @@ def run_web():
 
 # Botingiz sozlamalari
 TELEGRAM_BOT_TOKEN = "8511403320:AAEiXKzfRrGCIyPNe4-JGF2PJqWVchYTNGU"
-GEMINI_API_KEY = "AQ.Ab8RN6IqWDXSiZST4cn_cU5IK_f4TBy_4tkIWNEbpn378ev_0g"
+GEMINI_API_KEY = "AQ.Ab8RN6I5zM7fMoW4qdsdSZrNxpVsXmz7Pg4G1254Lvact2mf2g"
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
