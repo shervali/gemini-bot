@@ -16,8 +16,8 @@ def run_web():
     app.run(host="0.0.0.0", port=port)
 
 # Botingiz sozlamalari
-TELEGRAM_BOT_TOKEN = "8511403320:AAEiXKzfRrGCIyPNe4-JGF2PJqWVchYTNGU"
-GEMINI_API_KEY = "AQ.Ab8RN6I5zM7fMoW4qdsdSZrNxpVsXmz7Pg4G1254Lvact2mf2g"
+TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN)
